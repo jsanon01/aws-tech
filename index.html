@@ -145,7 +145,7 @@
   <section class="main-section" id="Data_types_Arrays">
     <header>Amazon VPC Components</header>
     <article>
-      <p>Networking play an important role in how applications are going to talk to each other. By creating your <b>Virtual Private Cloud standing for VPC</b> which means your own "logically isolated region, you have complete control over the networking."</p>
+      <p>By creating your <b>Virtual Private Cloud standing for VPC</b> which means your own "logically isolated region, you have complete control over the networking."</p>
       <ul>
         <li><b>VPCs</b> are <u>region specific</u> meaning for multiple regions, you need to create different VPCs.</li>
         <li><b>Subnets</b> are <u>Availability Zone specific</u> meaning for multiple AZs, you need to create multiple subnets.</li>
@@ -157,35 +157,45 @@
         <li><b>Egress-Only Internet Gateway</b> allows VPC to communicate with the Internet for <u>IPv6 traffic only</u>.</li>
         <li><b>Elastic Network Interface (ENI)</b> is a virtual network interface that you can attach to an instance. ENI's attributes are: MACaddresses, 1 IPv4, 1 or more IPv6, 1 or more security group, a source/destination/check flag and description.</li>
         <li><b>Elastic IP address (EIP)</b> is not only a static IP address but also a public IPv4 address. <br>Public IP addresses are dynamic whereas Elastic IPs get allocated to your account, and stay the same.</li>
-        <li><b>Security Group (SG)</b> not only acts as a virtual firewall but also is <u>instance specific</u> meaning different SGs for different instances.</li>
-        <li><b>Network Access Control List (NACL)</b> acts as a firewall and is <u>subnet specific</u>.</li>
+        <li><b>Security Group (SG)</b> not only acts as a virtual firewall but also is <u>instance specific</u> meaning different SGs for different instances.
+        <br>SGs are <u>stateful</u> means changes applied to incoming rule (allowed Port 80) automatically apply to outgoing rule (opened Port 80).</li>
+        <li><b>Network Access Control List (NACL)</b> acts as a firewall and is <u>subnet specific</u>.
+          <br>NACLs are <u>stateless</u> means changes applied to incoming rule <b>will not be applied</b> to the outgoing rule. e.g. If you allow an incoming port 80, you would also need to apply the rule for outgoing traffic.</li>
+        <li><b>VPC Peering</b> allows 1 VPC to connect to another using IPv4 or IPv6 addresses. <b><i>You can't peer VPCs across regions.</i></b></li>
+        <li><b>VPC Endpoint</b> allows you to connect to VPC and other services outside like S3 and Dynamo DB. <i>No public IPv4 and Internet Gateway needed.</i></li>
+        <li><b>VPC Flow Logs</b> enables you to capture information about IP traffic going to and from network interfaces in your VPC.</li>
+        <li><b>Default VPC</b> is created in each region by default. with the following features: Dynamic Public & Private IPs, Public & Private DNS names...</li>
+        <!-- <li></li>
         <li></li>
         <li></li>
         <li></li>
         <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li></li> -->
       </ul>
 
     </article>
     </section>
   <section class="main-section" id="if...else_statement">
-    <header>if...else statement</header>
+    <header>Elastic Compute Cloud (EC2)</header>
     <article>
-Python supports the usual logical conditions from mathematics:
+  Networking play an important role in how applications are going to talk to each other. EC2 has the following features: 
 <ul>
-  <li>Equals: a == b</li>
-  <li>Not Equals: a != b</li>
-  <li>Less than or equal to: a < b</li>
-  <li>Greater than: a > b</li>
-
+  <li><b>Scalability:</b> you can scale up and scale down at any point.</li>
+  <li><b>Time to market:</b> EC2 can be deployed almost instantly.</li>
+  <li><b>Cost effective:</b> you don't really have to pay for a huge capital expense.</li>
+  <li><b>Reliable:</b> EC2 is 99.95 percent available for each region.</li>
+  
 </ul>
 <p>
-These conditions can be used in several ways, most commonly in "if statements" and loops.
+  <center><img src="ec2_types.jpg" alt="vpc image" align="right" height="222" width="422"></center>
+There are 5 types of EC2 instances available:
+<ul>
+  <li><b>General-purpose:</b> suitable for light workloads. Example web servers.</li>
+  <li><b>Compute optimized:</b> suitable for high performance computing. Example gaming servers, media transcoding, batch jobs...</li>
+  <li><b>Memory optimized:</b> suitable for running in-memory databases.</li>
+  <li><b>Storage optimized:</b> suitable for data warehouse applications. </li>
+  <li><b>Advanced computing:</b> good for machine learning algorithms, molecular modeling...</li>
+</ul>
 
 An "if statement" is written by using the if keyword.
     </article>
