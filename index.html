@@ -70,37 +70,37 @@
   <section class="main-section" id="features">
     <header>3 Features of Cloud Computing</header>
     <article> 
-<ul>
+<ol>
   <li><b>I.A.A.S. (Infrastructure As A Service)</b> &larr; Customers have control over all the resources such as VPCs, EC2s, EBS...</li>
   <li><b>P.A.A.S. (Platform As A Service)</b> &larr; No overhead on customer-side of managing infrastructure like RDS, EMR, Elasticserach</li>
   <li><b>S.A.A.S. (Software As A Service)</b> &larr; AWS delivers apps over the Net. Such examples are Web-based Email, SalesForce.com...</li>
-</ul>
+</ol>
 
     </article>
     </section>
   <section class="main-section" id="types">
     <header>3 Types of Cloud Computing</header>
-    <ul>
+    <ol>
       <li><b>On-Demand</b> &larr; it works like an electrical switch (turn on and off when needed)</li>
       <li><b>Accessible from the Internet</b>&larr; Resources can be spinned up everywhere</li>
       <li><b>Pay-as-you-go model</b> &larr; Customers pay exactly for what they use...</li>
-    </ul>
+    </ol>
    
     </section>
   <section class="main-section" id="services">
     <header>3 Main Services of Cloud Computing</header>
     <article>
-      <ul>
+      <ol>
         <li><b>All-in-cloud</b> &larr; Either customers create or migrate existing apps</li>
         <li><b>Hybrid</b> &larr; Customers hosts some apps in cloud and on-premises.</li>
         <li><b>On-premises</b> &larr; Customers deploy their own data centers using virtualization.</li>
-      </ul>
+      </ol>
     </article>
     </section>
   <section class="main-section" id="metaphores">
     <header>Technical Metaphores</header>
     <article>
-      <center><img src="metaphore.jpg" alt="vpc image" align="right" height="222" width="422"></center>
+      <center><img src="metaphore.jpg" alt="metaphore image" align="right" height="222" width="422"></center>
       <p>Straightforwardly, VPC is one's private space in the cloud.</p>
       <p>House is to a village what VPC is to the cloud.</p>
       <p>Main door is to a house what Internet Gateway is  to VPCs</p>
@@ -165,12 +165,6 @@
         <li><b>VPC Endpoint</b> allows you to connect to VPC and other services outside like S3 and Dynamo DB. <i>No public IPv4 and Internet Gateway needed.</i></li>
         <li><b>VPC Flow Logs</b> enables you to capture information about IP traffic going to and from network interfaces in your VPC.</li>
         <li><b>Default VPC</b> is created in each region by default. with the following features: Dynamic Public & Private IPs, Public & Private DNS names...</li>
-        <!-- <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li> -->
       </ul>
 
     </article>
@@ -184,65 +178,123 @@
   <li><b>Time to market:</b> EC2 can be deployed almost instantly.</li>
   <li><b>Cost effective:</b> you don't really have to pay for a huge capital expense.</li>
   <li><b>Reliable:</b> EC2 is 99.95 percent available for each region.</li>
-  
 </ul>
 <p>
   <center><img src="ec2_types.jpg" alt="vpc image" align="right" height="222" width="422"></center>
 There are 5 types of EC2 instances available:
-<ul>
+<ol>
   <li><b>General-purpose:</b> suitable for light workloads. Example web servers.</li>
   <li><b>Compute optimized:</b> suitable for high performance computing. Example gaming servers, media transcoding, batch jobs...</li>
   <li><b>Memory optimized:</b> suitable for running in-memory databases.</li>
   <li><b>Storage optimized:</b> suitable for data warehouse applications. </li>
   <li><b>Advanced computing:</b> good for machine learning algorithms, molecular modeling...</li>
+</ol>
+  AWS provides multiple pricing options depending on your payment flexibility and instance's duration:
+<ul>
+  <li><b>On-demand instance:</b> you pay just for the usage with no upfront and hidden costs.</li>
+  <li><b>Reserved instance:</b> requires either 1 or 3-year commitment with a discount up to 75%.</li>
+  <li><b>Spot instance:</b> is great for workloads that can restart from where they failed. Discount is up to 90%.</li>
 </ul>
 
-An "if statement" is written by using the if keyword.
     </article>
     </section>
   <section class="main-section" id="while_statement">
-    <header>while statement</header>
+    <header>Storage Options</header>
     <article>
-Python has two primitive loop commands:
-
-<code>while (condition)
-  statement</code>
-If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.
-
-<p>The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.</p>
-
-      <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
-
-Example:
-
-      <p>The following while loop iterates as long as n is less than three:</p>
-
-<code>var n = 0;
-var x = 0;
-while (n < 3) {
-  n++;
-  x += n;
-}</code>
-<p>With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:</p>
-
-<li>After the first pass: n = 1 and x = 1</li>
-<li>After the second pass: n = 2 and x = 3</li>
-<li>After the third pass: n = 3 and x = 6</li>
- <p>After completing the third pass, the condition n &lt 3 is no longer true, so the loop terminates.</p>
+  AWS provides a wide range of storage options to optimize your applications.
+  <ul>
+    <li><b>Amazon S3:</b> suitable for Large objects</li>
+    <li><b>Amazon EC2 Ephemeral Storage:</b> suitable for Transient data</li>
+    <li><b>Amazon EBS:</b> suitable for Persistent block storage with snapshots</li>
+    <li><b>Amazon Glacier:</b> suitable for Archive data</li>
+    <li><b>Amazon CloudFront:</b> suitable for Content distribution</li>
+    <li><b>Amazon DynamoDB:</b> great for Simple nonrelational data</li>
+    <li><b>Amazon RDS:</b> Automated, managed MySQL, PostgreSQL, Oracle, MariaDB, SQL Server</li>
+    <li><b>Amazon Aurora:</b> Cloud-optimized flavors of MySQL and PostgreSQL</li>
+    <li><b>Amazon Redshift:</b> suitable for Data warehouse workloads</li>
+  </ul>
     </article>
     </section>
   <section class="main-section" id="For_Loop">
-    <header>For Loop</header>
+    <header>Databases on AWS</header>
     <article> 
-A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+      A database management system (DBMS) is the software that controls the storage, organisation, and retrieval of data. DBMS and RDBMS are often used interchangeably.
+      <br>
+      <br>
+      In order for data to be accessible, RDBMS follows certain rules to ensure data integrity:
+    <ul>
+      <li>The first integrity states that <b>rows should be distinct.</b></li>
+      <li>The second integrity states that <b>column values must not have repeating groups or arrays.</b></li>
+      <li>The third integrity is about <b>the concept of NULL which means a column's value is not known.</b></li>
+    </ul>
+      <p><b>Various ways to host your Database</b></p>
+      <ul>
+        <li><u>Scenario 1:</u> Hosting the DB in your Data Center (On-Premises) | <i>you have to take care of everything.</i></li>
+        <li><u>Scenario 2:</u> Hosting the DB on Amazon EC2 Servers | <i>it is a shared-responsibility.</i>
+          <ul>
+            <li>You take care of App optimization, Scaling, HA, DB backups, DB Software patches, OS patches.</li>
+            <li>AWS take care of OS installation, maintenance, racking, power, cooling, networking, and so on...</li>
+          </ul>
+          
+         </li>
+        <li><u>Scenario 3:</u> Hosting the DB using Amazon RDS |<i> AWS does all the heavy lifting for you.</i></u></li>
+      </ul>
+      <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-      <li>Loop through a string.</li>
-      <li>The break statement</li>
-      <li>The continue statement</li>
-      <li>The range function</li>
-      <p>This is less like the for keyword in other programming language, and works more like an iterator method as found in other object-orientated programming languages.</p>
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
 
-<code>for (condition)
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+    <table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+<!-- <code>for (condition)
   statement</code>
 <p>With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
     </p>
@@ -250,7 +302,7 @@ A for loop is used for iterating over a sequence (that is either a list, a tuple
       With the keyword for, we will have a loop through the letters in 'banana'. For example, <code>for x in "banana":
                                       print(x)</code> .
       </p>
-<p>The for loop does not require an indexing variable to set beforehand.</p>
+<p>The for loop does not require an indexing variable to set beforehand.</p> -->
     </article>
     </section>
   <section class="main-section" id="Reference">
