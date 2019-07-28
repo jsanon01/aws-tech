@@ -17,11 +17,11 @@
     <a class="nav-link" href="#services" rel="internal"><li>3 Services of Cloud Computing</li></a>
     <a class="nav-link" href="#metaphores" rel="internal"><li>Technical Metaphores</li></a>
     <a class="nav-link" href="#elasticity" rel="internal"><li>Elasticity</li></a>
-    <a class="nav-link" href="#Lists" rel="internal"><li>Technical Bird's-eye View</li></a>
-    <a class="nav-link" href="#Data_types_Arrays" rel="internal"><li>Amazon VPC Components</li></a>
-    <a class="nav-link" href="#if...else_statement" rel="internal"><li>Compute</li></a>
-    <a class="nav-link" href="#while_statement" rel="internal"><li>Storage</li></a>
-    <a class="nav-link" href="#For_Loop" rel="internal"><li>Database</li></a>
+    <a class="nav-link" href="#bird_eye_view" rel="internal"><li>Technical Bird's-eye View</li></a>
+    <a class="nav-link" href="#vpc_components" rel="internal"><li>Amazon VPC Components</li></a>
+    <a class="nav-link" href="#Compute" rel="internal"><li>Compute</li></a>
+    <a class="nav-link" href="#Storage" rel="internal"><li>Storage</li></a>
+    <a class="nav-link" href="#Databases" rel="internal"><li>Databases</li></a>
     <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
   </ul>
 </nav>
@@ -121,7 +121,7 @@
   </ul>
     </article>
     </section>
-  <section class="main-section" id="Lists">
+  <section class="main-section" id="bird_eye_view">
     <header>Technical Bird's-eye View</header>
     <article>
 <p>The operation team should have a dashoboard providing a bird's-eye view of the status of all the applications'health checks:</p>
@@ -142,7 +142,7 @@
     print(thislist[1]) -->
     </article>
     </section>
-  <section class="main-section" id="Data_types_Arrays">
+  <section class="main-section" id="vpc_components">
     <header>Amazon VPC Components</header>
     <article>
       <p>By creating your <b>Virtual Private Cloud standing for VPC</b> which means your own "logically isolated region, you have complete control over the networking."</p>
@@ -169,7 +169,7 @@
 
     </article>
     </section>
-  <section class="main-section" id="if...else_statement">
+  <section class="main-section" id="Compute">
     <header>Elastic Compute Cloud (EC2)</header>
     <article>
   Networking play an important role in how applications are going to talk to each other. EC2 has the following features: 
@@ -198,12 +198,18 @@ There are 5 types of EC2 instances available:
 
     </article>
     </section>
-  <section class="main-section" id="while_statement">
+  <section class="main-section" id="Storage">
     <header>Storage Options</header>
     <article>
   AWS provides a wide range of storage options to optimize your applications.
   <ul>
-    <li><b>Amazon S3:</b> suitable for Large objects</li>
+    <li><b>Amazon S3 (Standard):</b> suitable for Large objects
+    <ul>
+      <li><b>Amazon S3 Standard Infrequent Access (IA):</b> data is accessed <u>less frequently</u></li>
+      <li><b>Amazon S3 Reduced Redundancy Storage (RRS):</b> data is easily reproduced in <u>different video resolutions.</u></li>
+      <li><b>Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA):</b>  less frequently but requires <u>rapid access when needed.</u></li>
+    </ul>
+    </li>
     <li><b>Amazon EC2 Ephemeral Storage:</b> suitable for Transient data</li>
     <li><b>Amazon EBS:</b> suitable for Persistent block storage with snapshots</li>
     <li><b>Amazon Glacier:</b> suitable for Archive data</li>
@@ -215,7 +221,7 @@ There are 5 types of EC2 instances available:
   </ul>
     </article>
     </section>
-  <section class="main-section" id="For_Loop">
+  <section class="main-section" id="Databases">
     <header>Databases on AWS</header>
     <article> 
       A database management system (DBMS) is the software that controls the storage, organisation, and retrieval of data. DBMS and RDBMS are often used interchangeably.
@@ -239,6 +245,8 @@ There are 5 types of EC2 instances available:
          </li>
         <li><u>Scenario 3:</u> Hosting the DB using Amazon RDS |<i> AWS does all the heavy lifting for you.</i></u></li>
       </ul>
+      <br>
+      <h3><center>Hosting Amazon RDS vs Amazon EC2</center></h3>
       <style>
 table {
   font-family: arial, sans-serif;
@@ -259,39 +267,39 @@ tr:nth-child(even) {
 
     <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <!-- <th>Company</th> -->
+    <th>You should choose RDS if</th>
+    <th>You should choose EC2 if</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <!-- <td>Alfreds Futterkiste</td> -->
+    <td>You don't want to manage the databae</td>
+    <td>You need full control over the database</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <!-- <td>Centro comercial Moctezuma</td> -->
+    <td>You lack in-house expertise to manage databases</td>
+    <td>You need operating system access</td>
   </tr>
   <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
+    <!-- <td>Ernst Handel</td> -->
+    <td>Yo want automated backup and recovery</td>
+    <td>You need full control over backups, replication, and clustering</td>
   </tr>
   <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
+    <!-- <td>Island Trading</td> -->
+    <td>You want to focus on high-level tuning tasks and optimization</td>
+    <td>You size & performance needs exceeds the Amazon RDS offerings</td>
   </tr>
   <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
+    <!-- <td>Laughing Bacchus Winecellars</td> -->
+    <td>You want to push-button multi-AZ replication</td>
+    <td>Your RDBMS engine features are not available in Amazon RDS</td>
   </tr>
   <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
+    <!-- <td>Magazzini Alimentari Riuniti</td> -->
+    <td>You want to focus on tasks bringing value to your business</td>
+    <td>You want superuser privilege on the database</td>
   </tr>
 </table>
 <!-- <code>for (condition)
