@@ -16,6 +16,7 @@
     <a class="nav-link" href="#services" rel="internal"><li>3 Services of Cloud Computing</li></a>
     <a class="nav-link" href="#5_pillars" rel="internal"><li>5 Pillars about AWS WAF</li></a>
     <a class="nav-link" href="#metaphores" rel="internal"><li>Technical Metaphores</li></a>
+    <a class="nav-link" href="#best_practices" rel="internal"><li>AWS Best Practices</li></a>
     <a class="nav-link" href="#elasticity" rel="internal"><li>Elasticity</li></a>
     <a class="nav-link" href="#bird_eye_view" rel="internal"><li>Technical Bird's-eye View</li></a>
     <a class="nav-link" href="#vpc_components" rel="internal"><li>Amazon VPC Components</li></a>
@@ -127,9 +128,11 @@
             </li>
             <li><b>Cost-optimization &larr; money-saving opportunities is more than money you actually going to save.</b>
               <ul>
-                <li>Choose the best consumption model: shutting down the environments when not in use either on-demand or pay-as-you-go pricing model</li>
-                <li></li>
-                <li></li>
+                <li>Analyze the expenditure: find out whether you are getting enough Return on Investments (ROI).</li>
+                <li>Choose the best consumption model: shutting down on-demand or pay-as-you-go pricing model when not in use either </li>
+                <li>Use managed services: Leverage managed and serverless services as much as you can.</li>
+                <li>Stop spending on a data center: focus on innovation rather on I.T. infrastructure.</li>
+                
               </ul>
             </li>
           </ol>
@@ -151,8 +154,37 @@
       <p>Household appliances are to a house what instances are to VPCs</p>
     </article>
     </section>
-  <section class="main-section" id="elasticity">
-    <header>Elasticity</header>
+  <section class="main-section" id="best_practices">
+    <header>AWS Best Practices</header>
+    <article>
+<p>The following are the best practices you should follow for designing your architecture for the cloud:</p>
+  <ul>
+    <li><b>Designing for Failures</b>: your goal is to see your application survive (function) in case of disaster.
+        <ul>
+          <li>you can start by seperating web, database, and app tiers.</li>
+          <li>you should have multiple EC2s so if one of them goes down, another one is up and running.</li>
+          <li>you can enable multi-AZ features that will give you a standby instance in a different AZ.</li>
+        </ul>
+    </li>
+    <li><b>Build security in every layer</b>: security should be your best friend.
+      <ul>
+        <li>Enfore the principle of least privilege with IAM user, groups, roles, and policies.</li>
+        <li>Encrypt data in-transit and at rest.</li>
+        <li>Use KMS to create and control encryption keys.</li>
+      </ul>
+    </li>
+    <li><b>Implement Elasticity</b>: is one of the major benefits of moving to the cloud:
+        <ul>
+    <li><b>Auto Scaling</b> can automatically be used to scale up (adding) or scale down (removing) instances in your envorinment.</li>
+    <li><b>Elastic Load Balancer (ELB)</b> is to distribute the load across EC2 instances in multiple availability zones.</li>
+    <li><b>Dynamo DB</b> is a fully managed service that is used to maintain user state information.</li>
+  </ul>
+    </li>
+  </ul>
+    </article>
+    </section>
+    <section class="main-section" id="elasticity">
+    <header>Elasticity XXXXXXXXXXX</header>
     <article>
 <p>Besides "Going global in minutes," <b>Elasticity</b> is one of the major benefits of moving to the cloud:</p>
   <ul>
