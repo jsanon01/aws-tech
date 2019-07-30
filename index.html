@@ -10,11 +10,11 @@
   <header>AWS Documentation</header>
   <ul> 
     <a class="nav-link" href="#Introduction_to_AWS" rel="internal"><li>Introduction to AWS</li></a>
-    <a class="nav-link" href="#What_to_know_about_AWS" rel="internal"><li>What to know about AWS CSA</li></a>
     <a class="nav-link" href="#Brief_History" rel="internal"><li>Brief History of Cloud Computing</li></a>
     <a class="nav-link" href="#features" rel="internal"><li>3 Features of Cloud Computing</li></a>
     <a class="nav-link" href="#types" rel="internal"><li>3 Types of Cloud Computing</li></a>
     <a class="nav-link" href="#services" rel="internal"><li>3 Services of Cloud Computing</li></a>
+    <a class="nav-link" href="#5_pillars" rel="internal"><li>5 Pillars about AWS WAF</li></a>
     <a class="nav-link" href="#metaphores" rel="internal"><li>Technical Metaphores</li></a>
     <a class="nav-link" href="#elasticity" rel="internal"><li>Elasticity</li></a>
     <a class="nav-link" href="#bird_eye_view" rel="internal"><li>Technical Bird's-eye View</li></a>
@@ -46,20 +46,12 @@
 
       </artice>
     </section>
-  <section class="main-section" id="What_to_know_about_AWS">
-        <header>What to expect from AWS CSA</header>
-        <header>5 pillars</header>
-        <article>
-        <p>As an AWS (CSA) Certified Solution Architect, I possess significant achievements around specific application projects as well as comprehensive know-how around how applications and services are built through the AWS platform.</p>
-        <li>Willing to spread best-practice knowledge between the solution architect teams</li>
-        <li>Understand well-defined purposes and technical standards</li>
-        <li>As an I.T. admin., I have 1-year of studying and practical experience.</li>
-    </article>
+  
     </section>
   <section class="main-section" id="Brief_History">
     <header>Brief History of AWS</header>
     <article>
-       <center><img src="aws-statistic.jpg" alt="aws-statistic image" align="right" height="222" width="422"></center>
+       <center><img src="aws-statistic.jpg" alt="aws-statistic image" align="right" height="222" width="400"></center>
     <p><i>"10 years ago, Amazon Web Services was launched with little fanfare as a side business for Amazon.com. Today, it’s a highly successful company in its own right, riding a remarkable $10 billion run rate,"</i> according to <a href="www.techcrunch.com">TechChrunch.com.</a></p>
 
   <p><i>In fact, AWS has grown into the most successful cloud infrastructure company on the planet, garnering more than 30 percent of the market. More than its three closest rivals — Microsoft, IBM and Google — combined,</i> according to data from Synergy Research.</p>
@@ -98,10 +90,58 @@
       </ol>
     </article>
     </section>
+    <section class="main-section" id="5_pillars">
+        <!-- <header>What to expect from AWS CSA</header> -->
+        <header>5 Pillars about AWS Well-Architected Framework</header>
+        <article>
+          <p><i>To achieve business goals, designing an architecture must be <u>secure</u>, <u>efficient</u>, <u>scalable</u>, <u>reliable</u>, and <u>cost-effective</u>. The AWS WAF has these five pillars:</i></p>
+          <ol>
+            <li><b>Operational excellence &larr; <i>how you will be able to support the business:</i></b>
+              <ul>
+                <li>Prepare &larr; you should be prepared to handle planned and unplanned downtime.</li>
+                <li>Operate &larr; you must automate as much as possible to operate efficiently.</li>
+                <li>Evolve &larr; means to start small and continuously keep on adding.</li>
+              </ul>
+            </li>
+            <li><b>Security &larr; <i>is the heart of everything:</i></b>
+              <ul>
+                <li>Implementing security at all layers | You should have Security Groups for each tier (three-tier architecture).</li>
+                <li>Securing data | in-transit (from web to app or app to DB) and at rest (using TDE, EBS volumes, and S3 server-side encryptions)</li>
+                <li>Enabling Traceability | trace, audit, monitor, and log everything happening in your environment in real-time.</li>
+              </ul>
+            </li>
+            <li><b>Performance &larr; <i>is all about the need for speed.</i></b>
+              <ul>
+                <li>Going global in minutes | able to design a highly scalable and available architecture, in a few clicks.</li>
+                <li>Leverage new technologies | going serverless as much as possible to avoid managing infrastructure.</li>
+                <li>Leverage multiple technologies | how much data can be offloaded to NoSQL, RDS, Redshift...</li>
+                <li>Experiment more often | since you pay only for what you use, it does not matter if your ideas fail...</li>
+              </ul>
+            </li>
+            <li><b>Reliability &larr; how the solution can recover from various failures:</b>
+              <ul>
+                <li>Scale horizontally | leverage multiple servers to minimize the impact</li>
+                <li>Test recovery procedures | Simulate all the failures you might be encountering</li>
+                <li>Automate recovery from failure | Proactively monitor the system as much as possible.</li>
+              </ul>
+            </li>
+            <li><b>Cost-optimization &larr; money-saving opportunities is more than money you actually going to save.</b>
+              <ul>
+                <li>Choose the best consumption model: shutting down the environments when not in use either on-demand or pay-as-you-go pricing model</li>
+                <li></li>
+                <li></li>
+              </ul>
+            </li>
+          </ol>
+        <!-- <p>As an AWS (CSA) Certified Solution Architect, I possess significant achievements around specific application projects as well as comprehensive know-how around how applications and services are built through the AWS platform.</p>
+        <li>Willing to spread best-practice knowledge between the solution architect teams</li>
+        <li>Understand well-defined purposes and technical standards</li>
+        <li>As an I.T. admin., I have 1-year of studying and practical experience.</li> -->
+    </article>
   <section class="main-section" id="metaphores">
     <header>Technical Metaphores</header>
     <article>
-      <center><img src="metaphore.jpg" alt="metaphore image" align="right" height="222" width="422"></center>
+      <center><img src="metaphore.jpg" alt="metaphore image" align="right" height="222" width="375"></center>
       <p>Straightforwardly, VPC is one's private space in the cloud.</p>
       <p>House is to a village what VPC is to the cloud.</p>
       <p>Main door is to a house what Internet Gateway is  to VPCs</p>
@@ -181,7 +221,7 @@
   <li><b>Reliable:</b> EC2 is 99.95 percent available for each region.</li>
 </ul>
 <p>
-  <center><img src="ec2_types.jpg" alt="vpc image" align="right" height="222" width="422"></center>
+  <center><img src="ec2_types.jpg" alt="vpc image" align="right" height="222" width="400"></center>
 There are 5 types of EC2 instances available:
 <ol>
   <li><b>General-purpose:</b> suitable for light workloads. Example web servers.</li>
