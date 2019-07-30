@@ -48,6 +48,7 @@
     </section>
   <section class="main-section" id="What_to_know_about_AWS">
         <header>What to expect from AWS CSA</header>
+        <header>5 pillars</header>
         <article>
         <p>As an AWS (CSA) Certified Solution Architect, I possess significant achievements around specific application projects as well as comprehensive know-how around how applications and services are built through the AWS platform.</p>
         <li>Willing to spread best-practice knowledge between the solution architect teams</li>
@@ -201,9 +202,9 @@ There are 5 types of EC2 instances available:
   <section class="main-section" id="Storage">
     <header>Storage Options</header>
     <article>
-  AWS provides a wide range of storage options to optimize your applications.
+  AWS provides a wide range of storage options to optimize your applications. 
   <ul>
-    <li><b>Amazon S3 (Standard):</b> suitable for Large objects
+    <li><b>Amazon S3 (Standard):</b> suitable for Large objects. | Access Control Policies: Access, Bucket, and ACL.
     <ul>
       <li><b>Amazon S3 Standard Infrequent Access (IA):</b> data is accessed <u>less frequently</u></li>
       <li><b>Amazon S3 Reduced Redundancy Storage (RRS):</b> data is easily reproduced in <u>different video resolutions.</u></li>
@@ -211,7 +212,31 @@ There are 5 types of EC2 instances available:
     </ul>
     </li>
     <li><b>Amazon EC2 Ephemeral Storage:</b> suitable for Transient data</li>
-    <li><b>Amazon EBS:</b> suitable for Persistent block storage with snapshots</li>
+    <li><b>Amazon EBS:</b> suitable for Persistent block storage with snapshots | Mounting option available...
+      <p><i>3 types of block storage offerings that AWS provides:</i></p>
+      <ol>
+        <li>Amazon EC2 instance store: instance store is ephemeral which means data stored is gone when EC2 shuts down.</li>
+        <li>Amazon EBS SSD-backed volume: 
+          <ul>
+            <li><u>General-Purpose:</u> suitable for boot volumes, applications requiring low latency, virtual desktops, dev and test environments.</li>
+            <li><u>Provisioned IOPS SSD:</u> suitable for DB workloads such as Oracle, PostgreSQL, MySQL, MS SQL Server, Mongo DB and Cassandra.</li>
+          </ul>
+        </li>
+        <li>Amazon EBS HDD-backed volume: useful for frequently accessed.
+          <ul>
+            <li><u>Throughput-Optimized:</u> suitable for data warehouses, ETL, log processing, mapreduce jobs.</li>
+            <li><u>Cold HDD:</u> very cheap and useful for infrequently accessed data.</li>
+          </ul>
+        </li>
+      </ol>
+    </li>
+    <li><b>Amazon EFS:</b> supports AZ offline conditions (automatically replicated across AZs within a region) | Mounting option available...
+      <ul>
+        <li>EFS is a fully managed service acting as a local file systen when attached to EC2s.</li>
+        <li>EFS is elastic which means it automatically grows and shrinks as adding or removing files.</li>
+        <li>EFS can be created in seconds (with 10 file systems per account).</li>
+      </ul>
+    </li>
     <li><b>Amazon Glacier:</b> suitable for Archive data</li>
     <li><b>Amazon CloudFront:</b> suitable for Content distribution</li>
     <li><b>Amazon DynamoDB:</b> great for Simple nonrelational data</li>
