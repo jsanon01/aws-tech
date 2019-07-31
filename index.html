@@ -17,7 +17,7 @@
     <a class="nav-link" href="#5_pillars" rel="internal"><li>5 Pillars about AWS WAF</li></a>
     <a class="nav-link" href="#metaphores" rel="internal"><li>Technical Metaphores</li></a>
     <a class="nav-link" href="#best_practices" rel="internal"><li>AWS Best Practices</li></a>
-    <a class="nav-link" href="#elasticity" rel="internal"><li>Elasticity</li></a>
+    <a class="nav-link" href="#products_services" rel="internal"><li>Products & Services</li></a>
     <a class="nav-link" href="#bird_eye_view" rel="internal"><li>Technical Bird's-eye View</li></a>
     <a class="nav-link" href="#vpc_components" rel="internal"><li>Amazon VPC Components</li></a>
     <a class="nav-link" href="#Compute" rel="internal"><li>Compute</li></a>
@@ -36,11 +36,11 @@
 
 <li>I cannot talk about AWS without mentioning the following advantages of Cloud Computing:
 <ol>
-<li><b>Gaining agility</b> meaning to provision resources almost instantly;</li> 
-<li><b>Avoiding guessing capacity</b> meaning to scale up or down when needed;</li> 
-<li><b>Avoiding physical infrastructure</b> like physical data centers, racking, wiring just to name a few;</li>
- <li><b>Going global in minutes</b> compared to traditional model that takes 3-6 months;</li>
- <li><b>Moving from capital expenses to flexible expenses</b> means to facilitate innovation as many times as you want instead of spending money on purchasing hardware</li></ol>
+<li><b>Gaining agility</b> meaning to provision resources almost instantly...</li> 
+<li><b>Avoiding guessing capacity</b> meaning to scale up or down when needed...</li> 
+<li><b>Avoiding physical infrastructure</b> like physical data centers, racking, wiring just to name a few...</li>
+ <li><b>Going global in minutes</b> compared to traditional model that takes 3-6 months...</li>
+ <li><b>Moving from capital expenses to flexible expenses</b> means to facilitate innovation as many times as you want instead of spending money on purchasing hardware...</li></ol>
 </li>
 <li>AWS follows the "shared-security model" meaning AWS is responsible for the <b>security of the cloud</b> while customers are responsible for the <b>security in the cloud.</b></li>
 <li>There are four primary certifications that can be obtained; Developer, SysOps Administrator, DevOps Engineer and Solutions Architect. There are also two different levels of Solutions Architect certification. The first level is Associate, and the highest level is Professional.</li>
@@ -54,7 +54,7 @@
     <article>
        <center><img src="aws-statistic.jpg" alt="aws-statistic image" align="right" height="222" width="400"></center>
     <p><i>"10 years ago, Amazon Web Services was launched with little fanfare as a side business for Amazon.com. Today, it’s a highly successful company in its own right, riding a remarkable $10 billion run rate,"</i> according to <a href="www.techcrunch.com">TechChrunch.com.</a></p>
-
+      <br>
   <p><i>In fact, AWS has grown into the most successful cloud infrastructure company on the planet, garnering more than 30 percent of the market. More than its three closest rivals — Microsoft, IBM and Google — combined,</i> according to data from Synergy Research.</p>
     <br>
     <p>Speaking recently at an event in Washington, DC, AWS CEO Andy Jassy, who has been there from the beginning, explained <i>how these core systems developed out of need over a three-year period beginning in 2000, and, before they knew it, without any real planning, they had the makings of a business that would become AWS.</i></p>
@@ -66,7 +66,7 @@
     <article> 
 <ol>
   <li><b>I.A.A.S. (Infrastructure As A Service)</b> &larr; Customers have control over all the resources such as VPCs, EC2s, EBS...</li>
-  <li><b>P.A.A.S. (Platform As A Service)</b> &larr; No overhead on customer-side of managing infrastructure like RDS, EMR, Elasticserach</li>
+  <li><b>P.A.A.S. (Platform As A Service)</b> &larr; No overhead on customer-side of managing infrastructure like RDS, EMR, Elasticserach...</li>
   <li><b>S.A.A.S. (Software As A Service)</b> &larr; AWS delivers apps over the Net. Such examples are Web-based Email, SalesForce.com...</li>
 </ol>
 
@@ -75,8 +75,8 @@
   <section class="main-section" id="types">
     <header>3 Types of Cloud Computing</header>
     <ol>
-      <li><b>On-Demand</b> &larr; it works like an electrical switch (turn on and off when needed)</li>
-      <li><b>Accessible from the Internet</b>&larr; Resources can be spinned up everywhere</li>
+      <li><b>On-Demand</b> &larr; it works like an electrical switch (turn on and off when needed)...</li>
+      <li><b>Accessible from the Internet</b>&larr; Resources can be spinned up everywhere...</li>
       <li><b>Pay-as-you-go model</b> &larr; Customers pay exactly for what they use...</li>
     </ol>
    
@@ -85,8 +85,8 @@
     <header>3 Main Services of Cloud Computing</header>
     <article>
       <ol>
-        <li><b>All-in-cloud</b> &larr; Either customers create or migrate existing apps</li>
-        <li><b>Hybrid</b> &larr; Customers hosts some apps in cloud and on-premises.</li>
+        <li><b>All-in-cloud</b> &larr; Either customers create or migrate existing apps.</li>
+        <li><b>Hybrid</b> &larr; Customers host some apps in cloud and on-premises.</li>
         <li><b>On-premises</b> &larr; Customers deploy their own data centers using virtualization.</li>
       </ol>
     </article>
@@ -121,8 +121,8 @@
             </li>
             <li><b>Reliability &larr; how the solution can recover from various failures:</b>
               <ul>
-                <li>Scale horizontally | leverage multiple servers to minimize the impact</li>
-                <li>Test recovery procedures | Simulate all the failures you might be encountering</li>
+                <li>Scale horizontally | leverage multiple servers to minimize the impact.</li>
+                <li>Test recovery procedures | Simulate all the failures you might be encountering.</li>
                 <li>Automate recovery from failure | Proactively monitor the system as much as possible.</li>
               </ul>
             </li>
@@ -161,37 +161,127 @@
   <ul>
     <li><b>Designing for Failures</b>: your goal is to see your application survive (function) in case of disaster.
         <ul>
-          <li>you can start by seperating web, database, and app tiers.</li>
-          <li>you should have multiple EC2s so if one of them goes down, another one is up and running.</li>
-          <li>you can enable multi-AZ features that will give you a standby instance in a different AZ.</li>
+          <li>You can start by seperating web, database, and app tiers.</li>
+          <li>You should have multiple EC2s so if one of them goes down, another one is up and running.</li>
+          <li>You can enable multi-AZ features that will give you a standby instance in a different AZ.</li>
         </ul>
     </li>
     <li><b>Build security in every layer</b>: security should be your best friend.
       <ul>
-        <li>Enfore the principle of least privilege with IAM user, groups, roles, and policies.</li>
+        <li>Enfore the principle of least privilege with IAM users, groups, roles, and policies.</li>
         <li>Encrypt data in-transit and at rest.</li>
         <li>Use KMS to create and control encryption keys.</li>
       </ul>
     </li>
     <li><b>Implement Elasticity</b>: is one of the major benefits of moving to the cloud:
         <ul>
-    <li><b>Auto Scaling</b> can automatically be used to scale up (adding) or scale down (removing) instances in your envorinment.</li>
-    <li><b>Elastic Load Balancer (ELB)</b> is to distribute the load across EC2 instances in multiple availability zones.</li>
-    <li><b>Dynamo DB</b> is a fully managed service that is used to maintain user state information.</li>
+    <li>Auto Scaling can automatically be used to scale up (adding) or scale down (removing) instances in your envorinment.</li>
+    <li>Elastic Load Balancer (ELB) is to distribute the load across EC2 instances in multiple availability zones.</li>
+    <li>Dynamo DB is a fully managed service that is used to maintain user state information.</li>
   </ul>
     </li>
   </ul>
     </article>
     </section>
-    <section class="main-section" id="elasticity">
-    <header>Elasticity XXXXXXXXXXX</header>
+    <section class="main-section" id="products_services">
+    <header>Products & Services (1)</header>
     <article>
-<p>Besides "Going global in minutes," <b>Elasticity</b> is one of the major benefits of moving to the cloud:</p>
-  <ul>
+<p>These two tables summarize the core services which are at the heart of the AWS offerings:</p>
+    
+    <table>
+  <tr>
+    <th>Compute</th>
+    <th>Analytics</th>
+    <th>Security & Compliance</th>
+    <th>Artificial Intelligence</th>
+    <th>Management Tools</th>
+  </tr>
+  <tr>
+    <td>EC2</td>
+    <td>Athena</td>
+    <td>IAM</td>
+    <td>LEX</td>
+    <td>CloudFormation</td>
+  </tr>
+  <tr>
+    <td>EC2 AutoScaling</td>
+    <td>EMR</td>
+    <td>Amazon Inspector</td>
+    <td>Polly</td>
+    <td>Service Catalog</td>
+  </tr>
+  <tr>
+    <td>ECS</td>
+    <td>Elasticserach</td>
+    <td>Amazon Certificate Manager</td>
+    <td>Rekognition</td>
+    <td>OpsWorks</td>
+  </tr>
+  <tr>
+    <td>AWS Lambda</td>
+    <td>CloudSearch</td>
+    <td>Amazon WAF</td>
+    <td>IOT</td>
+    <td>CloudWatch</td>
+  </tr>
+  <tr>
+    <td>Elastic Beanstalk</td>
+    <td>Kinesis</td>
+    <td>AWS Shield</td>
+    <td>IOT Platform</td>
+    <td>AWS Config</td>
+  </tr>
+  <tr>
+    <td>Amazon Lighsail</td>
+    <td>QuickSight</td>
+    <td>AWS Directory Service</td>
+    <td>GreenGrass</td>
+    <td>CloudTrail</td>
+  </tr>
+</table>
+<h2>Products & Services (2)</h2>
+<table>
+  <tr>
+    <th>Network</th>
+    <th>Database</th>
+    <th>Storage</th>
+    <th>Mobile Services</th>
+    <th>Application Services</th>
+  </tr>
+  <tr>
+    <td>VPCs</td>
+    <td>RDS</td>
+    <td>EBS</td>
+    <td>Amazon Cognito</td>
+    <td>API Gateway</td>
+  </tr>
+  <tr>
+    <td>Route 53</td>
+    <td>Dynamo DB</td>
+    <td>S3</td>
+    <td>Mobile Hub</td>
+    <td>Step Functions</td>
+  </tr>
+  <tr>
+    <td>ELB</td>
+    <td>Redshift</td>
+    <td>EFS</td>
+    <td>Device Farm</td>
+    <td>SWF</td>
+  </tr>
+  <tr>
+    <td>Direct Connect</td>
+    <td>Amazon Aurora</td>
+    <td>Amazon Glacier</td>
+    <td>Mobile Analytics</td>
+    <td>Transcoder</td>
+  </tr>
+</table>
+  <!-- <ul>
     <li><b>Auto Scaling</b> can automatically be used to scale up (adding) or scale down (removing) instances in your envorinment.</li>
     <li><b>Elastic Load Balancer (ELB)</b> is to distribute the load across EC2 instances in multiple availability zones.</li>
     <li><b>Dynamo DB</b> is a fully managed service that is used to maintain user state information.</li>
-  </ul>
+  </ul> -->
     </article>
     </section>
   <section class="main-section" id="bird_eye_view">
@@ -200,7 +290,7 @@
 <p>The operation team should have a dashoboard providing a bird's-eye view of the status of all the applications'health checks:</p>
 <ul>
   <li><b>Amazon CloudWatch Logs</b> &larr; to monitor and store logs from EC2s, CloudTrail, and other sources.</li>
-  <li><b>Amazon ElasticSearch</b> &larr; to log analytics and application monitoring</li>
+  <li><b>Amazon ElasticSearch</b> &larr; to log analytics and application monitoring.</li>
   <li><b>Personal Health Dashboard</b> &larr; to provide alerts when AWS is experiencing events that may impact you.</li>
   <li><b>Service Health Dashboard</b> &larr; to provide up-to-the-minute information on AWS service availability.</li>
 </ul>
@@ -218,11 +308,11 @@
   <section class="main-section" id="vpc_components">
     <header>Amazon VPC Components</header>
     <article>
-      <p>By creating your <b>Virtual Private Cloud standing for VPC</b> which means your own "logically isolated region, you have complete control over the networking."</p>
+      <p>By creating your VPC that stands for <b>Virtual Private Cloud</b> which means your own "logically isolated region, you have complete control over the networking."</p>
       <ul>
         <li><b>VPCs</b> are <u>region specific</u> meaning for multiple regions, you need to create different VPCs.</li>
         <li><b>Subnets</b> are <u>Availability Zone specific</u> meaning for multiple AZs, you need to create multiple subnets.</li>
-        <li>New subnets should be created between CIDR block range of: /19 = 8,190 IP addresses and /28 = 16 IP addresses</li>
+        <li><i>New subnets should be created between CIDR block range of: /19 = 8,190 IP addresses and /28 = 16 IP addresses</i></li>
         <li><b>Route Table</b> (or internal mapping traffic) is automatically set up when creating a VPC. Thus, each subnet should have its own route table.</li>
         <li><b>Internet Gateway (IG)</b> allows your VPC to communicate with the Internet</li>
         <li><b>NAT Instances</b> are not only located in Public Subnet but also act like a bridge to connect the Private Subnet to the Internet in order to download firmware updates and database patches.</li>
@@ -345,7 +435,7 @@ There are 5 types of EC2 instances available:
       <br>
       <h3><center>Hosting Amazon RDS vs Amazon EC2</center></h3>
       <style>
-table {
+/*table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -359,7 +449,7 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
-}
+}*/
 </style>
 
     <table>
@@ -380,7 +470,7 @@ tr:nth-child(even) {
   </tr>
   <tr>
     <!-- <td>Ernst Handel</td> -->
-    <td>Yo want automated backup and recovery</td>
+    <td>You want automated backup and recovery</td>
     <td>You need full control over backups, replication, and clustering</td>
   </tr>
   <tr>
@@ -413,7 +503,9 @@ tr:nth-child(even) {
   <section class="main-section" id="Reference">
     <header>Reference</header>
     <article>
-      <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/python/default.asp" target="_blank">MDN</a>
+      <li>All the documentation in this page is taken from <a href="https://www.amazon.com/Certified-Solutions-Architect-Associate-SAA-C01/dp/1260108279/ref=pd_lpo_sbs_14_img_1?_encoding=UTF8&psc=1&refRID=G5B36D0FAEFV8FSJRE69" target="_blank"> <img src="all-in-one.jpg" alt="all-in-one book" style="width:42px; height:42px; border:0;"> ALL-IN-ONE</a>
+
+
     </article>
     </section>
 </main>
