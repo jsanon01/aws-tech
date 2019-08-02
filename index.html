@@ -313,7 +313,7 @@
         <li><b>VPCs</b> are <u>region specific</u> meaning for multiple regions, you need to create different VPCs.</li>
         <li><b>Subnets</b> are <u>Availability Zone specific</u> meaning for multiple AZs, you need to create multiple subnets.</li>
         <li><i>New subnets should be created between CIDR block range of: /19 = 8,190 IP addresses and /28 = 16 IP addresses</i></li>
-        <li><b>Route Table</b> (or internal mapping traffic) is automatically set up when creating a VPC. Thus, each subnet should have its own route table.</li>
+        <li><b>Route Table</b> (or implied router) is automatically set up when creating a VPC. Thus, each subnet should have its own route table.</li>
         <li><b>Internet Gateway (IG)</b> allows your VPC to communicate with the Internet</li>
         <li><b>NAT Instances</b> are not only located in Public Subnet but also act like a bridge to connect the Private Subnet to the Internet in order to download firmware updates and database patches.</li>
         <li><b>NAT Gateway</b> is a managed service which provides better availability and bandwidth and performs the same functions as NAT instances.</li>
